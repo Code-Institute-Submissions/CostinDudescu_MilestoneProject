@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:100,200,300,400,500,600,700,800,900 | Exo:100,200,300,400,500,600,700,800,900');
+/******* STYlING ********/
+
+/******* GENERAL ********/
+
+html {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/******** COLOR ********/
+
+/*How to choose colors https://www.websitebuilderexpert.com/designing-websites/how-to-choose-color-for-your-website/# */
+
+/**Useful tool for picking&mixing colors Adobe Color CC **/
+
+/****Dominant color Green : #48FF16 | Accent colors : 1. Orange #FF5900; 2. Blue #1714CC ****/
+
+.menu {
+    background-color: white;
+}
+
+.navbar-brand {
+    color: #48FF16;
+    /*Domninant color green*/
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #6c757d/*Color for gray-dark */
+}
+
+.greeting {
+    color: #48FF16;
+}
+
+/******** HEADER ********/
+
+/**** NAVIGATION ****/
+
+/*
+.navbar-toggler {
+    background-color: #FF5900;
+    border: 0;
+    border-radius: 0;
+}*/
+
+.navbar-brand {
+    position: relative;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 2px;
+    transition: all .5s ease-in-out;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: #FF5900;
+}
+
+.navbar-text {
+    position: absolute;
+    top: 37px;
+    left: 5px;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    color: #FF5900;
+    font-size: 19px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+
+
+/**Home Link **/
+
+#hq {
+    color: #FF5900;
+}
+
+/******** MAIN CONTENT ********/
+
+/**** Greeting ****/
+
+.greeting {
+    font-weight: 700;
+}
+
+.greetingp {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+/******** MEDIA ********/
+
+@media (min-width: 992px) {
+    /** Bottom effect - green bar - first two links **/
+    .navbar-expand-lg .navbar-nav .firsttwo {
+        position: relative;
+    }
+
+    .navbar-expand-lg .navbar-nav .firsttwo::after {
+        visibility: hidden;
+        z-index: 1;
+        position: absolute;
+        top: 36px;
+        content: '';
+        width: 1px;
+        height: 2px;
+        background-color: #48FF16;
+        left: 8px;
+        transition: all .5s ease-in-out;
+    }
+
+    .navbar-expand-lg .navbar-nav .firsttwo:hover::after {
+        visibility: visible;
+        width: 48px;
+    }
+
+    /** Bottom effect - green bar - third link **/
+    .navbar-expand-lg .navbar-nav .third {
+        position: relative;
+    }
+
+    .navbar-expand-lg .navbar-nav .third::after {
+        visibility: hidden;
+        z-index: 1;
+        position: absolute;
+        top: 36px;
+        content: '';
+        width: 1px;
+        /*grow till 65*/
+        height: 2px;
+        background-color: #48FF16;
+        left: 9px;
+        transition: all .5s ease-in-out;
+    }
+
+    .navbar-expand-lg .navbar-nav .third:hover::after {
+        visibility: visible;
+        width: 65px;
+    }
+
+    /** Bottom effect - green bar - forth link **/
+    .navbar-expand-lg .navbar-nav .forth {
+        position: relative;
+    }
+
+    .navbar-expand-lg .navbar-nav .forth::after {
+
+        z-index: 1;
+        position: absolute;
+        top: 36px;
+        content: '';
+        width: 1px;
+        /*grow till 63*/
+        height: 2px;
+        background-color: #48FF16;
+        left: 9px;
+        transition: all .5s ease-in-out;
+    }
+
+    .navbar-expand-lg .navbar-nav .forth:hover::after {
+        visibility: visible;
+        width: 63px;
+    }
+
+    /******** MAIN CONTENT ********/
+    /**** Greeting ****/
+    .greeting {
+        font-weight: 700;
+    }
+    .greetingp {
+      
+        margin: 120px 0;
+    }
+
+}
