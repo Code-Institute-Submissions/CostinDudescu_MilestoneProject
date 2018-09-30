@@ -77,11 +77,6 @@ html, body{
 }
 
 /******** MAIN CONTENT ********/
-
-.testing {
-    height: 80vh;
-}
-
 /**** Greeting ****/
 
 .greeting {
@@ -102,6 +97,13 @@ html, body{
         -moz-box-shadow: 0px 0px 16px 4px rgba(108,117,125,1);
         box-shadow: 0px 0px 10px 4px rgba(108,117,125,1);
     
+}
+/******** Services ********/
+.services{
+    font-family: 'Nothing You Could Do', cursive;
+    font-weight: 400;
+    font-size:28;
+    color:#08B200;
 }
 /******** Footer ********/
 
@@ -141,10 +143,6 @@ html, body{
 }
 
 /******** MEDIA ********/
-@media (min-width:576px){
-
-
-}
 @media (min-width:768px) {
     /** Bottom effect - green bar - first two links **/
     .navbar-expand-lg .navbar-nav .firsttwo {
@@ -224,7 +222,7 @@ html, body{
     }
     .greetingp {
 
-        margin: 40px 0;
+        margin: 12px 0;
     }
       .galleryfirstpage {
         text-decoration: none;
@@ -244,7 +242,9 @@ html, body{
    .footerP {
        text-align: justify;
    }
-  
+  .footerS{
+      font-size:16px;
+  }
 }
 
 @media (min-width:992px) {
@@ -286,7 +286,7 @@ html, body{
     }
     .greetingp {
 
-        margin: 40px 0;
+        margin: 20px 0;
     }
     .galleryfirstpage {
         text-decoration: none;
