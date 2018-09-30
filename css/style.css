@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:100,200,300,400,500,600,700,800,900 | Exo:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do:100,200,300,400,500,600,700,800,900');
 /******* STYlING ********/
 
 /******* GENERAL ********/
@@ -6,21 +7,24 @@
 html {
     font-family: 'Titillium Web', sans-serif;
 }
-
+html, body{
+    height:100%;
+  
+}
 /******** COLOR ********/
 
 /*How to choose colors https://www.websitebuilderexpert.com/designing-websites/how-to-choose-color-for-your-website/# */
 
 /**Useful tool for picking&mixing colors Adobe Color CC **/
 
-/****Dominant color Green : #48FF16 | Accent colors : 1. Orange #FF5900; 2. Blue #1714CC ****/
+/****Dominant color Green : #08B200 | Accent colors : 1. Orange #FF5900; 2. Blue #1714CC ****/
 
 .menu {
     background-color: white;
 }
 
 .navbar-brand {
-    color: #48FF16;
+    color: #08B200;
     /*Domninant color green*/
 }
 
@@ -29,7 +33,7 @@ html {
 }
 
 .greeting {
-    color: #48FF16;
+    color: #08B200;
 }
 
 /******** HEADER ********/
@@ -44,9 +48,10 @@ html {
 }*/
 
 .navbar-brand {
+    font-family: 'Nothing You Could Do', cursive;
     position: relative;
-    font-weight: 600;
-    font-size: 24px;
+    font-weight: 400;
+    font-size: 34px;
     letter-spacing: 2px;
     transition: all .5s ease-in-out;
 }
@@ -61,7 +66,7 @@ html {
     top: 37px;
     left: 5px;
     font-family: "Exo", sans-serif;
-    font-weight: 500;
+    font-weight: 200;
     color: #FF5900;
     font-size: 19px;
 }
@@ -82,21 +87,73 @@ html {
 
 /******** MAIN CONTENT ********/
 
+.testing {
+    height: 80vh;
+}
+
 /**** Greeting ****/
 
 .greeting {
-    font-weight: 700;
+    font-family: 'Nothing You Could Do', cursive;
+    font-weight: 400;
 }
 
 .greetingp {
     font-family: "Exo", sans-serif;
     font-weight: 300;
+    font-size: 18px;
+    margin: 10px 0;
+}
+/******** Gallery ********/
+.gallery {
+        transition: all .5s ease-in-out;
+        -webkit-box-shadow: 0px 0px 16px 4px rgba(108,117,125,1);
+        -moz-box-shadow: 0px 0px 16px 4px rgba(108,117,125,1);
+        box-shadow: 0px 0px 10px 4px rgba(108,117,125,1);
+    
+}
+/******** Footer ********/
+
+.footerpart {
+   background-color:#ffffff;
+   }
+ .footerpart{
+   height: 110px
+ } 
+
+.footerH {
+    font-family: "Exo", sans-serif;
+    font-size: 19px;
+    color: #FF5900;
+
+}
+
+.footerP {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #FF5900;
+    text-align: center
+}
+
+
+.footerS {
     font-size: 20px;
-    margin: 20px 0;
+    color: #FF5900;
+    transition: all .5s ease-in-out;
+    
+}
+
+.footerS:hover {
+    color: #48FF16;
+    transform: scale(1.2)
 }
 
 /******** MEDIA ********/
+@media (min-width:576px){
 
+
+}
 @media (min-width:768px) {
     /** Bottom effect - green bar - first two links **/
     .navbar-expand-lg .navbar-nav .firsttwo {
@@ -111,7 +168,7 @@ html {
         content: '';
         width: 1px;
         height: 2px;
-        background-color: #48FF16;
+        background-color: #08B200;
         left: 8px;
         transition: all .5s ease-in-out;
     }
@@ -135,7 +192,7 @@ html {
         width: 1px;
         /*grow till 65*/
         height: 2px;
-        background-color: #48FF16;
+        background-color: #08B200;
         left: 9px;
         transition: all .5s ease-in-out;
     }
@@ -159,7 +216,7 @@ html {
         width: 1px;
         /*grow till 63*/
         height: 2px;
-        background-color: #48FF16;
+        background-color: #08B200;
         left: 9px;
         transition: all .5s ease-in-out;
     }
@@ -178,49 +235,81 @@ html {
 
         margin: 40px 0;
     }
-    .previewgallery {
-        margin-top: 40px;
-        position: relative;
+      .galleryfirstpage {
+        text-decoration: none;
+        transform: all .5s ease-in-out;
     }
-    .previewgallerytext {
-        position: absolute;
-        top: 156px;
-        left: 0;
-        width: 77%;
-        padding: 0 20px;
-        font-family: "Exo", sans-serif;
-        font-size: 20px;
-        font-weight: 300;
-        z-index: 2;
-
+    
+    .gallery {
+        transition: all .5s ease-in-out;
+        -webkit-box-shadow: 0px 0px 16px 4px rgba(108,117,125,1);
+        -moz-box-shadow: 0px 0px 16px 4px rgba(108,117,125,1);
+        box-shadow: 0px 0px 16px 4px rgba(108,117,125,1);
     }
+    .galleryfirstpage .gallery:hover{
+        transform: scale(1.2);
+        cursor: zoom-in;
+    }
+   .footerP {
+       text-align: justify;
+   }
+  
 }
 
 @media (min-width:992px) {
-
-    .previewgallery {
-        margin-top: 70px;
-
+    #main{
+        min-height: 100%;
+        margin-bottom: -110px;
     }
-    .previewgallerytext {
-
-        top: 180px;
-
-
+    #main:after{
+        content:"";
+        display: block;
+        height:110px;
+    }
+      .galleryfirstpage {
+        text-decoration: none;
+        transform: all .5s ease-in-out;
+    }
+    
+    .gallery {
+        transition: all .5s ease-in-out;
+        -webkit-box-shadow: 0px 0px 16px 4px rgba(108,117,125,1);
+        -moz-box-shadow: 0px 0px 16px 4px rgba(108,117,125,1);
+        box-shadow: 0px 0px 16px 4px rgba(108,117,125,1);
+    }
+    .galleryfirstpage .gallery:hover{
+        transform: scale(1.2);
+        cursor: zoom-in;
     }
 }
 
 @media (min-width:1200px) {
+    #main{
+        min-height: 100%;
+        margin-bottom: -110px;
+    }
+    #main:after{
+        content:"";
+        display: block;
+        height:110px;
+    }
     .greetingp {
 
-        margin: 120px 0;
+        margin: 40px 0;
     }
-    .previewgallery {
-        margin-top: 100px;
-      
+    .galleryfirstpage {
+        text-decoration: none;
+        transform: all .5s ease-in-out;
     }
-    .previewgallerytext {
-        top: 247px;
-      
+    
+    .gallery {
+        transition: all .5s ease-in-out;
+        -webkit-box-shadow: 0px 0px 16px 4px rgba(108,117,125,1);
+        -moz-box-shadow: 0px 0px 16px 4px rgba(108,117,125,1);
+        box-shadow: 0px 0px 16px 4px rgba(108,117,125,1);
+    }
+    .galleryfirstpage .gallery:hover{
+        transform: scale(1.2);
+        cursor: zoom-in;
     }
 }
