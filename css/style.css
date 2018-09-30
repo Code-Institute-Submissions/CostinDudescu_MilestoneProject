@@ -54,21 +54,12 @@ html, body{
     font-size: 34px;
     letter-spacing: 2px;
     transition: all .5s ease-in-out;
+    
 }
 
 .navbar-brand:hover,
 .navbar-brand:focus {
     color: #FF5900;
-}
-
-.navbar-text {
-    position: absolute;
-    top: 37px;
-    left: 5px;
-    font-family: "Exo", sans-serif;
-    font-weight: 200;
-    color: #FF5900;
-    font-size: 19px;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -101,7 +92,7 @@ html, body{
 .greetingp {
     font-family: "Exo", sans-serif;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 17px;
     margin: 10px 0;
 }
 /******** Gallery ********/
