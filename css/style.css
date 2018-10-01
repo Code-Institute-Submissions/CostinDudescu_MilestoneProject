@@ -99,8 +99,8 @@ body {
 
 .gallery {
     transition: all .5s ease-in-out;
-    -webkit-box-shadow: 0px 0px 16px 4px rgba(108, 117, 125, 1);
-    -moz-box-shadow: 0px 0px 16px 4px rgba(108, 117, 125, 1);
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(108, 117, 125, 1);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(108, 117, 125, 1);
     box-shadow: 0px 0px 10px 4px rgba(108, 117, 125, 1);
 
 }
@@ -185,6 +185,15 @@ body {
 /******** MEDIA ********/
 
 @media (min-width:768px) {
+     #main {
+        min-height: 100%;
+        margin-bottom: -110px;
+    }
+    #main:after {
+        content: "";
+        display: block;
+        height: 110px;
+    }
     /** Bottom effect - green bar - first two links **/
     .navbar-expand-lg .navbar-nav .firsttwo {
         position: relative;
@@ -272,9 +281,9 @@ body {
 
     .gallery {
         transition: all .5s ease-in-out;
-        -webkit-box-shadow: 0px 0px 16px 4px rgba(108, 117, 125, 1);
-        -moz-box-shadow: 0px 0px 16px 4px rgba(108, 117, 125, 1);
-        box-shadow: 0px 0px 16px 4px rgba(108, 117, 125, 1);
+        -webkit-box-shadow: 0px 0px 10px 4px rgba(108, 117, 125, 1);
+        -moz-box-shadow: 0px 0px 10px 4px rgba(108, 117, 125, 1);
+        box-shadow: 0px 0px 10px 4px rgba(108, 117, 125, 1);
     }
     .galleryfirstpage .gallery:hover {
         transform: scale(1.2);
@@ -318,8 +327,8 @@ body {
 
     .gallery {
         transition: all .5s ease-in-out;
-        -webkit-box-shadow: 0px 0px 16px 4px rgba(108, 117, 125, 1);
-        -moz-box-shadow: 0px 0px 16px 4px rgba(108, 117, 125, 1);
+        -webkit-box-shadow: 0px 0px 10px 4px rgba(108, 117, 125, 1);
+        -moz-box-shadow: 0px 0px 10px 4px rgba(108, 117, 125, 1);
         box-shadow: 0px 0px 16px 4px rgba(108, 117, 125, 1);
     }
     .gallerya .gallery:hover {
