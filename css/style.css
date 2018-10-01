@@ -7,10 +7,13 @@
 html {
     font-family: 'Titillium Web', sans-serif;
 }
-html, body{
-    height:100%;
-  
+
+html,
+body {
+    height: 100%;
+
 }
+
 /******** COLOR ********/
 
 /*How to choose colors https://www.websitebuilderexpert.com/designing-websites/how-to-choose-color-for-your-website/# */
@@ -54,7 +57,7 @@ html, body{
     font-size: 34px;
     letter-spacing: 2px;
     transition: all .5s ease-in-out;
-    
+
 }
 
 .navbar-brand:hover,
@@ -77,6 +80,7 @@ html, body{
 }
 
 /******** MAIN CONTENT ********/
+
 /**** Greeting ****/
 
 .greeting {
@@ -90,29 +94,65 @@ html, body{
     font-size: 17px;
     margin: 10px 0;
 }
+
 /******** Gallery ********/
+
 .gallery {
-        transition: all .5s ease-in-out;
-        -webkit-box-shadow: 0px 0px 16px 4px rgba(108,117,125,1);
-        -moz-box-shadow: 0px 0px 16px 4px rgba(108,117,125,1);
-        box-shadow: 0px 0px 10px 4px rgba(108,117,125,1);
-    
+    transition: all .5s ease-in-out;
+    -webkit-box-shadow: 0px 0px 16px 4px rgba(108, 117, 125, 1);
+    -moz-box-shadow: 0px 0px 16px 4px rgba(108, 117, 125, 1);
+    box-shadow: 0px 0px 10px 4px rgba(108, 117, 125, 1);
+
 }
+
 /******** Services ********/
-.services{
+
+.services {
     font-family: 'Nothing You Could Do', cursive;
     font-weight: 400;
-    font-size:28;
-    color:#08B200;
+    font-size: 28;
+    color: #08B200;
 }
+
+/******** About ********/
+
+#aboutme {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+#vitruvius {
+    color: #FF5900;
+}
+
+.tools {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 20px;
+}
+
+.vitruviusprinciple {
+    color: #FF5900;
+    font-size: 20px;
+    font-family: "Exo", sans-serif;
+}
+
+/******** Projects ********/
+
+.headingsprojects {
+    color: #FF5900;
+   
+}
+
 /******** Footer ********/
 
 .footerpart {
-   background-color:#ffffff;
-   }
- .footerpart{
-   height: 110px
- } 
+    background-color: #ffffff;
+}
+
+.footerpart {
+    height: 110px
+}
 
 .footerH {
     font-family: "Exo", sans-serif;
@@ -134,7 +174,7 @@ html, body{
     font-size: 20px;
     color: #FF5900;
     transition: all .5s ease-in-out;
-    
+
 }
 
 .footerS:hover {
@@ -143,6 +183,7 @@ html, body{
 }
 
 /******** MEDIA ********/
+
 @media (min-width:768px) {
     /** Bottom effect - green bar - first two links **/
     .navbar-expand-lg .navbar-nav .firsttwo {
@@ -224,65 +265,92 @@ html, body{
 
         margin: 12px 0;
     }
-      .galleryfirstpage {
+    .gallerya {
         text-decoration: none;
-        transform: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
     }
-    
+
     .gallery {
         transition: all .5s ease-in-out;
-        -webkit-box-shadow: 0px 0px 16px 4px rgba(108,117,125,1);
-        -moz-box-shadow: 0px 0px 16px 4px rgba(108,117,125,1);
-        box-shadow: 0px 0px 16px 4px rgba(108,117,125,1);
+        -webkit-box-shadow: 0px 0px 16px 4px rgba(108, 117, 125, 1);
+        -moz-box-shadow: 0px 0px 16px 4px rgba(108, 117, 125, 1);
+        box-shadow: 0px 0px 16px 4px rgba(108, 117, 125, 1);
     }
-    .galleryfirstpage .gallery:hover{
+    .galleryfirstpage .gallery:hover {
         transform: scale(1.2);
         cursor: zoom-in;
     }
-   .footerP {
-       text-align: justify;
-   }
-  .footerS{
-      font-size:16px;
-  }
+    .footerP {
+        text-align: justify;
+    }
+    .footerS {
+        font-size: 16px;
+    }
+    /******** About ********/
+    #vitruvius {
+        color: #FF5900;
+    }
+    .tools {
+        font-family: 'Nothing You Could Do', cursive;
+        font-size: 20px;
+    }
+    .vitruviusprinciple {
+        color: #FF5900;
+        font-size: 20px;
+        font-family: "Exo", sans-serif;
+    }
 }
 
 @media (min-width:992px) {
-    #main{
+    #main {
         min-height: 100%;
         margin-bottom: -110px;
     }
-    #main:after{
-        content:"";
+    #main:after {
+        content: "";
         display: block;
-        height:110px;
+        height: 110px;
     }
-      .galleryfirstpage {
+    .galleryfirstpage {
         text-decoration: none;
         transform: all .5s ease-in-out;
     }
-    
+
     .gallery {
         transition: all .5s ease-in-out;
-        -webkit-box-shadow: 0px 0px 16px 4px rgba(108,117,125,1);
-        -moz-box-shadow: 0px 0px 16px 4px rgba(108,117,125,1);
-        box-shadow: 0px 0px 16px 4px rgba(108,117,125,1);
+        -webkit-box-shadow: 0px 0px 16px 4px rgba(108, 117, 125, 1);
+        -moz-box-shadow: 0px 0px 16px 4px rgba(108, 117, 125, 1);
+        box-shadow: 0px 0px 16px 4px rgba(108, 117, 125, 1);
     }
-    .galleryfirstpage .gallery:hover{
+    .gallerya .gallery:hover {
         transform: scale(1.2);
         cursor: zoom-in;
     }
+    /******** About  ********/
+    #vitruvius {
+        color: #FF5900;
+    }
+    .tools {
+        font-family: 'Nothing You Could Do', cursive;
+        font-size: 20px;
+    }
+    .vitruviusprinciple {
+        color: #FF5900;
+        font-size: 20px;
+        font-family: "Exo", sans-serif;
+    }
+ 
 }
 
 @media (min-width:1200px) {
-    #main{
+    #main {
         min-height: 100%;
         margin-bottom: -110px;
     }
-    #main:after{
-        content:"";
+    #main:after {
+        content: "";
         display: block;
-        height:110px;
+        height: 110px;
     }
     .greetingp {
 
@@ -292,15 +360,31 @@ html, body{
         text-decoration: none;
         transform: all .5s ease-in-out;
     }
-    
+
     .gallery {
         transition: all .5s ease-in-out;
-        -webkit-box-shadow: 0px 0px 16px 4px rgba(108,117,125,1);
-        -moz-box-shadow: 0px 0px 16px 4px rgba(108,117,125,1);
-        box-shadow: 0px 0px 16px 4px rgba(108,117,125,1);
+        -webkit-box-shadow: 0px 0px 10px 4px rgba(108, 117, 125, 1);
+        -moz-box-shadow: 0px 0px 10px 4px rgba(108, 117, 125, 1);
+        box-shadow: 0px 0px 10px 4px rgba(108, 117, 125, 1);
     }
-    .galleryfirstpage .gallery:hover{
+    .gallerya .gallery:hover {
         transform: scale(1.2);
         cursor: zoom-in;
+    }
+    /******** About ********/
+    #vitruvius {
+        color: #FF5900;
+    }
+    .tools {
+        font-family: 'Nothing You Could Do', cursive;
+        font-size: 20px;
+    }
+    .vitruviusprinciple {
+        color: #FF5900;
+        font-size: 20px;
+        font-family: "Exo", sans-serif;
+    }
+    #contactmargin {
+        margin-left: 40px;
     }
 }
