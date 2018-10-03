@@ -73,6 +73,84 @@ body {
 
 
 
+/** Bottom effect - green bar - first two links **/
+    .navbar-expand-lg .navbar-nav .firsttwo {
+        position: relative;
+    }
+
+    .navbar-expand-lg .navbar-nav .firsttwo::after {
+        visibility: hidden;
+        z-index: 1;
+        position: absolute;
+        top: 36px;
+        content: '';
+        width: 1px;
+        height: 2px;
+        background-color: #08B200;
+        left: 8px;
+        transition: all .5s ease-in-out;
+    }
+
+    .navbar-expand-lg .navbar-nav .firsttwo:hover::after {
+        visibility: visible;
+        width: 48px;
+    }
+
+    /** Bottom effect - green bar - third link **/
+    .navbar-expand-lg .navbar-nav .third {
+        position: relative;
+    }
+
+    .navbar-expand-lg .navbar-nav .third::after {
+        visibility: hidden;
+        z-index: 1;
+        position: absolute;
+        top: 36px;
+        content: '';
+        width: 1px;
+        /*grow till 65*/
+        height: 2px;
+        background-color: #08B200;
+        left: 9px;
+        transition: all .5s ease-in-out;
+    }
+
+    .navbar-expand-lg .navbar-nav .third:hover::after {
+        visibility: visible;
+        width: 65px;
+    }
+
+    /** Bottom effect - green bar - forth link **/
+    .navbar-expand-lg .navbar-nav .forth {
+        position: relative;
+    }
+
+    .navbar-expand-lg .navbar-nav .forth::after {
+        visibility: hidden;
+        z-index: 1;
+        position: absolute;
+        top: 36px;
+        content: '';
+        width: 1px;
+        /*grow till 63*/
+        height: 2px;
+        background-color: #08B200;
+        left: 9px;
+        transition: all .5s ease-in-out;
+    }
+
+    .navbar-expand-lg .navbar-nav .forth:hover::after {
+        visibility: visible;
+        width: 63px;
+    }
+ .nav-item .nav-link:focus{
+    color: #FF5900;
+}   
+ .nav-item .nav-link:active{
+    color: #FF5900;
+}   
+
+
 /**Home Link **/
 
 #hq {
@@ -247,7 +325,7 @@ body {
     }
 
     .navbar-expand-lg .navbar-nav .forth::after {
-
+        visibility: hidden;
         z-index: 1;
         position: absolute;
         top: 36px;
