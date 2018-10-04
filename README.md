@@ -61,9 +61,13 @@ I can make my mind if to call him and use his services or not.
  7. Users can click on each of them to see them in full size. Also, the images were edited for
   web, and the small versions are thumbs.
 
+**Media page - media.html**
+
+ 8. Users can view a video reportage made by a local television from Spain of one of Costin Dudescu' projects in Asturias.
+
  **Contact page - contact.html**
  
- 8. If they have a project in mind and want to implement it, users can contact Costin Dudescu through
+ 9. If they have a project in mind and want to implement it, users can contact Costin Dudescu through
   a contact form, by submitting their email address with the details of their project.
  
 ## Features left to implement
