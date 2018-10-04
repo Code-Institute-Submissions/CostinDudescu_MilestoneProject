@@ -66,12 +66,13 @@ body {
 }
 
 
- .nav-item .nav-link:focus{
+.nav-item .nav-link:focus {
     color: #FF5900;
-}   
- .nav-item .nav-link:active{
+}
+
+.nav-item .nav-link:active {
     color: #FF5900;
-}  
+}
 
 /******** MAIN CONTENT ********/
 
@@ -90,6 +91,43 @@ body {
 }
 
 /******** Gallery ********/
+
+/**** Modal for images ****/
+
+.modal-content {
+    background-color: transparent;
+    border: none;
+    border-radius: 0
+}
+
+.modal-header {
+    border: 0;
+    padding: 0;
+}
+
+.close {
+    color: #08B200;
+    font-size: 1.8rem;
+    opacity: .8;
+    transition: all .5s ease-in-out;
+}
+
+.btn {
+    border: 0;
+    padding: 0;
+    font-size: 0;
+    border-radius: 0;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: zoom-in
+}
+
+.close:not(:disabled):not(.disabled):hover {
+    color: #FF5900;
+}
+
+/**** Shadow for images ****/
 
 .gallery {
     transition: all .5s ease-in-out;
@@ -135,7 +173,7 @@ body {
 
 .headingsprojects {
     color: #FF5900;
-   
+
 }
 
 /******** Footer ********/
@@ -179,7 +217,7 @@ body {
 /******** MEDIA ********/
 
 @media (min-width:768px) {
-     #main {
+    #main {
         min-height: 100%;
         margin-bottom: -110px;
     }
@@ -188,76 +226,7 @@ body {
         display: block;
         height: 110px;
     }
-    /** Bottom effect - green bar - first two links **/
-    .navbar-expand-lg .navbar-nav .firsttwo {
-        position: relative;
-    }
 
-    .navbar-expand-lg .navbar-nav .firsttwo::after {
-        visibility: hidden;
-        z-index: 1;
-        position: absolute;
-        top: 36px;
-        content: '';
-        width: 1px;
-        height: 2px;
-        background-color: #08B200;
-        left: 8px;
-        transition: all .5s ease-in-out;
-    }
-
-    .navbar-expand-lg .navbar-nav .firsttwo:hover::after {
-        visibility: visible;
-        width: 45px;
-    }
-
-    /** Bottom effect - green bar - third link **/
-    .navbar-expand-lg .navbar-nav .third {
-        position: relative;
-    }
-
-    .navbar-expand-lg .navbar-nav .third::after {
-        visibility: hidden;
-        z-index: 1;
-        position: absolute;
-        top: 36px;
-        content: '';
-        width: 1px;
-        /*grow till 65*/
-        height: 2px;
-        background-color: #08B200;
-        left: 9px;
-        transition: all .5s ease-in-out;
-    }
-
-    .navbar-expand-lg .navbar-nav .third:hover::after {
-        visibility: visible;
-        width: 57px;
-    }
-
-    /** Bottom effect - green bar - forth link **/
-    .navbar-expand-lg .navbar-nav .forth {
-        position: relative;
-    }
-
-    .navbar-expand-lg .navbar-nav .forth::after {
-        visibility: hidden;
-        z-index: 1;
-        position: absolute;
-        top: 36px;
-        content: '';
-        width: 1px;
-        /*grow till 63*/
-        height: 2px;
-        background-color: #08B200;
-        left: 9px;
-        transition: all .5s ease-in-out;
-    }
-
-    .navbar-expand-lg .navbar-nav .forth:hover::after {
-        visibility: visible;
-        width: 55px;
-    }
 
     /******** MAIN CONTENT ********/
     /**** Greeting ****/
@@ -267,10 +236,6 @@ body {
     .greetingp {
 
         margin: 12px 0;
-    }
-    .gallerya {
-        text-decoration: none;
-        transition: all .5s ease-in-out;
     }
 
     .gallery {
@@ -325,10 +290,7 @@ body {
         -moz-box-shadow: 0px 0px 10px 4px rgba(108, 117, 125, 1);
         box-shadow: 0px 0px 16px 4px rgba(108, 117, 125, 1);
     }
-    .gallerya .gallery:hover {
-        transform: scale(1.2);
-        cursor: zoom-in;
-    }
+
     /******** About  ********/
     #vitruvius {
         color: #FF5900;
@@ -342,7 +304,7 @@ body {
         font-size: 20px;
         font-family: "Exo", sans-serif;
     }
- 
+
 }
 
 @media (min-width:1200px) {
@@ -370,10 +332,7 @@ body {
         -moz-box-shadow: 0px 0px 10px 4px rgba(108, 117, 125, 1);
         box-shadow: 0px 0px 10px 4px rgba(108, 117, 125, 1);
     }
-    .gallerya .gallery:hover {
-        transform: scale(1.2);
-        cursor: zoom-in;
-    }
+
     /******** About ********/
     #vitruvius {
         color: #FF5900;

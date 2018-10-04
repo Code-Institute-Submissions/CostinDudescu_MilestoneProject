@@ -58,7 +58,7 @@ I can make my mind if to call him and use his services or not.
 
  6. In this page, I used the dicton "a picture is worth a thousand words" and I tried to select
   for each of his services offered the representative pictures, creating a gallery for each of them.
- 7. Users can click on each of them to see them in full size. Also, the images were edited for
+ 7. Users can click on each of them to see them in full size. The gallery was remade with modals from Bootstrap, so that the users don't have to exit the page and then go back to were they Also, the images were edited for
   web, and the small versions are thumbs.
 
 **Media page - media.html**
