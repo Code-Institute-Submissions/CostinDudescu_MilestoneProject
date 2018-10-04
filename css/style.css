@@ -208,7 +208,7 @@ body {
 
     .navbar-expand-lg .navbar-nav .firsttwo:hover::after {
         visibility: visible;
-        width: 48px;
+        width: 45px;
     }
 
     /** Bottom effect - green bar - third link **/
@@ -232,7 +232,7 @@ body {
 
     .navbar-expand-lg .navbar-nav .third:hover::after {
         visibility: visible;
-        width: 65px;
+        width: 57px;
     }
 
     /** Bottom effect - green bar - forth link **/
@@ -256,7 +256,7 @@ body {
 
     .navbar-expand-lg .navbar-nav .forth:hover::after {
         visibility: visible;
-        width: 63px;
+        width: 55px;
     }
 
     /******** MAIN CONTENT ********/
